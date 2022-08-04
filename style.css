@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #222;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* Dark mod */
+
+    transition: background 0.2s linear;
+
+    /* Dark mod */
+}
+
+p{
+    font-weight: 500;
+}
+
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+}
+input:focus{
+    background: #000;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.price input{
+    width: 20%;
+}
+#total{
+    background: #a00d02;
+    padding: 5px 2px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+#total::before{
+    content: 'Total: ';
+}
+button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    background: #70009c;
+    color: #fff;
+    border-radius: 6px;
+    transition: 0.2s;
+    margin: 2px 0;
+}
+button:hover{
+    background: #9600d1;
+    letter-spacing: 1px;
+}
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.btnSearch button{
+    width: 45%;
+}
+
+#deleteAll{
+    margin: 20px 0;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+#submit{margin: 2px 0;}
+
+
+/* Light/Dark Mod */
+
+body.light {
+    background-color: rgb(255, 255, 255);
+}
+
+body.light h2{
+    color: black;
+}
+
+body.light p{
+    color: black;
+    font-weight: 500;
+}
+
+body.light button{
+    color: #fff;
+    background-color: #0059ff;
+}
+
+body.light div input{
+    background: #ebebeb;
+    color: #000;
+}
+
+body.light th{
+    color: black;
+}
+
+body.light tbody{
+    color: black;
+}
+
+body.light button:hover{
+    background: rgb(64, 124, 255);
+    letter-spacing: 1px;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 50px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.ball{
+    background-color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
+}
+
+
+
+/* Light/Dark Mod */
